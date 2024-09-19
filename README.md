@@ -21,13 +21,27 @@ Una de las principales utilidades que dara el codigo seria el encontrar Tonalida
 
 ###### EJemplo
 Ejemplo (64, 0, 57,  4,  30, 15,  2,  29,  1,  18,  0,  8)   --> Vector Creado para contar Notas
+
+
 Notas   ( C, C#, D,  D#,  E,  F,  F#,  G,  G#,  A,  A#, B)
 
+
+
+
 Sort    (0,  0,  1,  2,  4,  8, 15,  18,  29, 30,  57, 64)
+
+
 Notas   (A#, C#, G#, F#, D#, B,  F,   A,   G,  F,   D,  C)   --> Ordenamiento de notas que mas se repiten(MERGE)
 
+
+
+
 VectorC (1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1)                --> Comparando las notas que mas se repiten con los vectores de escalas declarados se encuentra la similitud.
+
+
 C Mayor (C, D, E, F, G, A, B)  
+
+
 
 
 OPCION 2 (alternativa)

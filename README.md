@@ -60,3 +60,5 @@ OPCION 2 (alternativa)
 
 Este programa para la clase de Programación de estructuras de datos y algoritmos fundamentales tendra como objetivo la creación, desglose o identificación de acordes en base a ciertos inputs dados por el usuario.
 Esto en caso de que el manejo de archivos de .xml sea muy compleja.
+
+Tambien podria ser una opcion agregada a la opcion 1.

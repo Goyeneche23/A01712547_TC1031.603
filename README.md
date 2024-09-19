@@ -51,6 +51,7 @@ VectorC (1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1)                --> Comparando las n
 C Mayor (C, D, E, F, G, A, B)  
 
 
+![Alt text]([https://assets.digitalocean.com/articles/alligator/boo.svg](https://storage.googleapis.com/moises-cms/Key_Tabela_c20bfcbbe5/Key_Tabela_c20bfcbbe5.jpg) "a title")
 <br>
 
 Se hara el uso de la libreria <Utility> que cuenta con la funcion pair(https://www.geeksforgeeks.org/pair-in-cpp-stl/), que nos ayudara para evitar una problematica tras realizar el Sort, con la funcion pair antes de ordenar asignaremos a todo valor de cantidad su nota correspondiente y tras esto podremos realizar el ordenamiento.

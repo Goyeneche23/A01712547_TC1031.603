@@ -44,7 +44,7 @@ VectorC (1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1)                --> Comparando las n
 C Mayor (C, D, E, F, G, A, B)  
 
 
-
+<br>
 
 
 OPCION 2 (alternativa)

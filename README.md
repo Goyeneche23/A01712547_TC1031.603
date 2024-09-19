@@ -26,7 +26,7 @@ Ejemplo (64, 0, 57,  4,  30, 15,  2,  29,  1,  18,  0,  8)   --> Vector Creado p
 Notas   ( C, C#, D,  D#,  E,  F,  F#,  G,  G#,  A,  A#, B)
 
 
-
+<br>
 
 
 Sort    (0,  0,  1,  2,  4,  8, 15,  18,  29, 30,  57, 64)
@@ -35,7 +35,7 @@ Sort    (0,  0,  1,  2,  4,  8, 15,  18,  29, 30,  57, 64)
 Notas   (A#, C#, G#, F#, D#, B,  F,   A,   G,  F,   D,  C)   --> Ordenamiento de notas que mas se repiten(MERGE)
 
 
-
+<br>
 
 
 VectorC (1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1)                --> Comparando las notas que mas se repiten con los vectores de escalas declarados se encuentra la similitud.

@@ -41,9 +41,13 @@ void NotasMasUsadas::Ordenamiento(){
     sorts.ordenaMerge(NotasYCantidad);
 }
 
-vector<int>NotasMasUsadas::NotasOrdenadas(vector<int>& CantidadNotas){ //"main"
-    UnirNotasCantidad(CantidadNotas); 
-    Ordenamiento();
+void NotasMasUsadas::NotasOrdenadas(vector<int>& notasOrdenadas) {
+    notasOrdenadas.clear();
+    UnirNotasCantidad(CantidadNotas); // Llena el vector de pares
+    Ordenamiento(); // Ordena los pares
+    for (int i = 0; i < NotasYCantidad.size(); ++i) {
+        notasOrdenadas.push_back(NotasYCantidad[i].second); //Se toma el valor de la nota para ordenarlas en el vector ya como nota musical de la menos usada a la mas usada
+    }
 }
 /*class EncontrarTonalid{
     

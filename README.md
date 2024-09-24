@@ -58,6 +58,11 @@ C Mayor (C, D, E, F, G, A, B)
 
 Se hara el uso de la libreria <Utility> que cuenta con la funcion pair(https://www.geeksforgeeks.org/pair-in-cpp-stl/), que nos ayudara para evitar una problematica tras realizar el Sort, con la funcion pair antes de ordenar asignaremos a todo valor de cantidad su nota correspondiente y tras esto podremos realizar el ordenamiento.
 
+#####Nota para avance 2
+
+Uso de linklist para un archivo.h que cree escalas en base a teoria musical y la lista en la que se trabajara usara los aprendido en clase para adicionar valores a la lista en lugar de usar el punch_back esto ayudara al simplificar las iteraciones del codigo.
+
+
 OPCION 2 (alternativa)
 ===============	
 

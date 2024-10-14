@@ -4,8 +4,7 @@
 
 #### Juan José Goyeneche Sánchez - A01712547
 
-
-OPCION 1 (prioridad)
+Descripcion proyecto
 ===============	
 
 Este programa para la clase de Programación de estructuras de datos y algoritmos fundamentales tendra como objetivo crear un herramienta que analise piezas musicales. 
@@ -58,15 +57,52 @@ C Mayor (C, D, E, F, G, A, B)
 
 Se hara el uso de la libreria <Utility> que cuenta con la funcion pair(https://www.geeksforgeeks.org/pair-in-cpp-stl/), que nos ayudara para evitar una problematica tras realizar el Sort, con la funcion pair antes de ordenar asignaremos a todo valor de cantidad su nota correspondiente y tras esto podremos realizar el ordenamiento.
 
-#####Nota para avance 2
 
-Uso de linklist para un archivo.h que cree escalas en base a teoria musical y la lista en la que se trabajara usara los aprendido en clase para adicionar valores a la lista en lugar de usar el punch_back esto ayudara al simplificar las iteraciones del codigo.
+## Descripción del avance 2
+Este avance busca hacer uso de las listas, esto se puede ver como al extraer las notas de la partitura del arvhivo XML haciendo uso de la herramiento TinyXML2 estas notas se almacenan en una lista ligada haciendo uso de los codigos realizados en clase. 
 
 
-OPCION 2 (alternativa)
-===============	
+### Cambios sobre el primer avance
+1. Escribe la lista de cambios realizados sobre el planteamiento original: Argumenta la razón por la que decidiste el cambio. Estos argumentos puedes retomarlos más adelante en tu argumentación de competencias.
+2. Cambio 2: Razón del cambio
+3. Cambio 3: Razón del cambio
+4. etc...: etc...
 
-Este programa para la clase de Programación de estructuras de datos y algoritmos fundamentales tendra como objetivo la creación, desglose o identificación de acordes en base a ciertos inputs dados por el usuario.
-Esto en caso de que el manejo de archivos de .xml sea muy compleja.
+## Instrucciones para compilar el avance de proyecto
+Ejecuta el siguiente comando en la terminal:
 
-Tambien podria ser una opcion agregada a la opcion 1.
+`g++ main.cpp -o primer_avance` 
+
+## Instrucciones para ejecutar el avance de proyecto
+Ejecuta el siguiente comando en la terminal:
+
+`./primer_avance` 
+
+## Descripción de las entradas del avance de proyecto
+Escribe aquí la descripción de las entradas del proyecto, por ejemplo, si de entrada se requieren varios archivos, hay que indicar el formato de cada uno de ellos, y proporcionar un ejemplo de los datos de cada archivo.
+
+## Descripción de las salidas del avance de proyecto
+Escribe aquí la descripción de los resultados de la ejecución de tu programa.
+
+## Desarrollo de competencias
+
+### SICT0301: Evalúa los componentes
+#### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
+Si lograste este criterio en el primer avance, copia aquí tu argumentación. Si no, ésta es una nueva oportunidad para lograrlo. Escribe aquí tu aprendizaje y tus argumentos sobre por qué consideras que ahora ya has desarrrollado este criterio y dónde se puede observar el desarrollo que mencionas.
+
+#### Hace un análisis de complejidad correcto y completo de todas las estructuras de datos y cada uno de sus usos en el programa.
+Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
+
+### SICT0302: Toma decisiones
+#### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
+Si lograste este criterio en el primer avance, copia aquí tu argumentación. Si no, ésta es una nueva oportunidad para lograrlo. Escribe aquí tu aprendizaje y tus argumentos sobre por qué consideras que ahora ya has desarrrollado este criterio y dónde se puede observar el desarrollo que mencionas.
+
+#### Selecciona una estructura de datos adecuada al problema y la usa correctamente.
+Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
+
+### SICT0303: Implementa acciones científicas
+#### Implementa mecanismos para consultar información de las estructras correctos.
+Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
+
+#### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
+Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.

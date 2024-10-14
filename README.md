@@ -13,10 +13,15 @@ Este programa para la clase de Programación de estructuras de datos y algoritmo
 Se usara la aplicación de musescore para sacar las partituras para su posterior analisis, se extraera la partitura en forma de archivo de .XML y se importara al codigo, dentro del codigo para la lectura de estas
 partituras se hara uso de la libreria TinyXML-2 (https://github.com/leethomason/tinyxml2), esta libreria esta hecha para leer archivos .XML.
 
-#### Libreria "TinyXML2 
+#### Libreria "TinyXML2 by Lee Thomason
 Usada para extraer los datos de un archivo .XML, haciendo uso de las funciones: 
+
 FirstChildElement
+![image](https://github.com/user-attachments/assets/35f01c71-a3a2-499c-bb06-851a3822f339)
+
 NextSiblingElement
+![image](https://github.com/user-attachments/assets/b5287d98-a255-442e-bfed-c847a966736c)
+
 (https://github.com/leethomason/tinyxml2)
 
 ##### Vector Cantidades

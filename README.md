@@ -14,7 +14,10 @@ Se usara la aplicación de musescore para sacar las partituras para su posterior
 partituras se hara uso de la libreria TinyXML-2 (https://github.com/leethomason/tinyxml2), esta libreria esta hecha para leer archivos .XML.
 
 #### Libreria "TinyXML2 
-###(https://github.com/leethomason/tinyxml2)
+Usada para extraer los datos de un archivo .XML, haciendo uso de las funciones: 
+FirstChildElement
+NextSiblingElement
+(https://github.com/leethomason/tinyxml2)
 
 ##### Vector Cantidades
 Se hara uso de una funcion que cuente las cantidad de veces que se repite una nota en la pieza musical. Esto se podria hacer con un ciclo y condicionante que sume cada vez que se encuentre la nota, se puede hacer uso de las funciones de busqueda vistas en clase como la busqueda secuencial.

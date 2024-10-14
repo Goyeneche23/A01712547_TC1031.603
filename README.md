@@ -13,7 +13,8 @@ Este programa para la clase de Programación de estructuras de datos y algoritmo
 Se usara la aplicación de musescore para sacar las partituras para su posterior analisis, se extraera la partitura en forma de archivo de .XML y se importara al codigo, dentro del codigo para la lectura de estas
 partituras se hara uso de la libreria TinyXML-2 (https://github.com/leethomason/tinyxml2), esta libreria esta hecha para leer archivos .XML.
 
-
+#### Libreria "TinyXML2 
+###(https://github.com/leethomason/tinyxml2)
 
 ##### Vector Cantidades
 Se hara uso de una funcion que cuente las cantidad de veces que se repite una nota en la pieza musical. Esto se podria hacer con un ciclo y condicionante que sume cada vez que se encuentre la nota, se puede hacer uso de las funciones de busqueda vistas en clase como la busqueda secuencial.

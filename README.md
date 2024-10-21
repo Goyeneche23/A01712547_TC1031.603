@@ -72,10 +72,10 @@ Este avance busca hacer uso de las listas, esto se puede ver como al extraer las
 
 
 ### Cambios sobre el primer avance
-1. Escribe la lista de cambios realizados sobre el planteamiento original: Argumenta la razón por la que decidiste el cambio. Estos argumentos puedes retomarlos más adelante en tu argumentación de competencias.
-2. Cambio 2: Razón del cambio
-3. Cambio 3: Razón del cambio
-4. etc...: etc...
+1. main.cpp: El main.cpp ya tiene implementado un llamado a funciones para realizar pruebas y evaluar el avance.
+2. leer.h: El mayor cambio fue la implementacion de leer.h este archivo hace uso de tinyXML2 para leer el archivo de texto y extraer los elementos que ocupamos para desglosar las partituras.
+3. list.h: El codigo mayormente desarrollado en las clases, se usara dentro de leer.h para guardar todas las notas en una lista ligada.
+4. contarNotas(): Dentro de Tonalidad.h se crea la funcion contarNotas que ayuda al ordenamiento de estas, haciendo uso de la lista ligada de una manera no muy practica pasa la informacion a un vector con el cual se trabajara para el analisis y ordenamiento.
 
 ## Instrucciones para compilar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
@@ -88,10 +88,10 @@ Ejecuta el siguiente comando en la terminal:
 `./primer_avance` 
 
 ## Descripción de las entradas del avance de proyecto
-Escribe aquí la descripción de las entradas del proyecto, por ejemplo, si de entrada se requieren varios archivos, hay que indicar el formato de cada uno de ellos, y proporcionar un ejemplo de los datos de cada archivo.
+Este programa funcionara a partir del input = "PruebasMusic.xml", un archivo .xml extraido de musescore. 
 
 ## Descripción de las salidas del avance de proyecto
-Escribe aquí la descripción de los resultados de la ejecución de tu programa.
+Este programa por el momento mostrara el progreso del codigo el cual sera mostrar todas las notas extraidas del archivo XML (archivo pequeño),asi como tambien en orden ascendente las notas que mas se repiten en la partitura y tambien la cantidad de veces que se repiten.
 
 ## Desarrollo de competencias
 

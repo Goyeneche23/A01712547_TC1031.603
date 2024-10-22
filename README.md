@@ -76,6 +76,12 @@ Tras validar que se puede leer el archivo validamos que este mismo tenga el elem
 
 Tras esto se accedera a "measure" que se encuentra dentro de "part", esto para acceder y posteriormente ir iterando sobre los compases, tras esto se buscara "note" que contendra los valores de las notas, note es como el espacio en el que va una nota, pero como en este ejemplo si dentro de note se encuentra "rest" ignoraremos y pasaremos al siguiente porque rest significaria que es un silencio.
 
+![image](https://github.com/user-attachments/assets/31b99301-bf32-4bfe-b017-391ab66218ac)
+
+En caso de que no sea un silencio significaria que existira un "pitch" y dentro de este habra la informacion de "step" que nos dara la nota existente (en caso de ser sostenida o bemol se representara en otra variable "alter"). Step se ligara a la lista.
+
+Solo funcionara con clave de Sol*
+
 
 
 ## Descripción del avance 2

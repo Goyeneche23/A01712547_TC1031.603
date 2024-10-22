@@ -66,6 +66,17 @@ C Mayor (C, D, E, F, G, A, B)
 
 Se hara el uso de la libreria <Utility> que cuenta con la funcion pair(https://www.geeksforgeeks.org/pair-in-cpp-stl/), que nos ayudara para evitar una problematica tras realizar el Sort, con la funcion pair antes de ordenar asignaremos a todo valor de cantidad su nota correspondiente y tras esto podremos realizar el ordenamiento.
 
+####Leer.h
+El proceso que se hara para extraer la partitura del archivo XML:
+![image](https://github.com/user-attachments/assets/bffb8cc3-302e-4dc5-9226-5a9583930eee)
+
+Tras validar que se puede leer el archivo validamos que este mismo tenga el elemento "score-partwise" que este contendra toda la partitura.
+
+![image](https://github.com/user-attachments/assets/050e2145-4c02-4bb7-9bc1-2273f4af959e)
+
+Tras esto se accedera a "measure" que se encuentra dentro de "part", esto para acceder y posteriormente ir iterando sobre los compases, tras esto se buscara "note" que contendra los valores de las notas, note es como el espacio en el que va una nota, pero como en este ejemplo si dentro de note se encuentra "rest" ignoraremos y pasaremos al siguiente porque rest significaria que es un silencio.
+
+
 
 ## Descripción del avance 2
 Este avance busca hacer uso de las listas, esto se puede ver como al extraer las notas de la partitura del arvhivo XML haciendo uso de la herramiento TinyXML2 estas notas se almacenan en una lista ligada haciendo uso de los codigos realizados en clase. 

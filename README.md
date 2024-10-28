@@ -97,12 +97,12 @@ Este avance busca hacer uso de las listas, esto se puede ver como al extraer las
 ## Instrucciones para compilar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
 
-`g++ main.cpp -o primer_avance` 
+`g++ -std=c++11` 
 
 ## Instrucciones para ejecutar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
 
-`./primer_avance` 
+`./main.cpp` 
 
 ## Descripción de las entradas del avance de proyecto
 Este programa funcionara a partir del input = "PruebasMusic.xml", un archivo .xml extraido de musescore. 

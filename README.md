@@ -97,12 +97,12 @@ Este avance busca hacer uso de las listas, esto se puede ver como al extraer las
 ## Instrucciones para compilar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
 
-`g++ -std=c++11` 
+`g++ main.cpp tinyxml2.cpp -o programa` 
 
 ## Instrucciones para ejecutar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
 
-`./main.cpp` 
+`./programa` 
 
 ## Descripción de las entradas del avance de proyecto
 Este programa funcionara a partir del input = "PruebasMusic.xml", un archivo .xml extraido de musescore. 

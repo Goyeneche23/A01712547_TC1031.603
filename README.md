@@ -149,9 +149,8 @@ Y se repite este proceso hasta ordenar todas las notas, la diferencia aqui es qu
 
     int Escalas::ajustarBucleNotas(int nota, int dominante){
         int distancia = nota - dominante; //distancia entre nota y nota dominante
-        // Ajustar a una cantidad que sea valida para nota 0 - 11
-        //en caso de ser negativo distancia deveulve el residuo lo cual sirve para hacer 0 - 11 un "bucle"
-        return (distancia + 12) % 12;  // ej. 2 - 4 = -2; -2 + 12 = 10; ej2. 5 - 1 = 4; + 12 = 16 % 12 = 16 - 12 = 4;
+     
+        return (distancia + 12) % 12;  
     }
 
 (distancia + 12) % 12;  Esta funcion se hace para que la nota 12 que en todo caso seria un C2 se tome como un C y siempre se trabaje sobre un bucle de 0 - 11, aunque esto tmb se pudo haber resuelto con un vector, me parecio que seria mas facil hacer operaciones matematicas y manipular las notas de esta manera.

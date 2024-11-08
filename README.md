@@ -115,13 +115,16 @@ Ejemplo:
 Para todo este proceso se hace uso de varias funciones especiales:
 
 1.- Sort:
-    `sort(inicio, fin, [&dominante, this](int a, int b) { //comparara 2 notas del vector pero no el numero en si, el resultados tras usar funcion ajustarBucleNotas 
-        return compararNotas(a, b, dominante);
-    });` 
+
+    sort(inicio, fin, [&dominante, this](int a, int b) { //comparara 2 notas del vector pero no el numero en si, el resultados tras usar funcion ajustarBucleNotas 
+            return compararNotas(a, b, dominante);
+        });
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
-`bool Escalas::compararNotas(int a, int b, int dominante) {
-    return ajustarBucleNotas(a, dominante) < ajustarBucleNotas(b, dominante);
-}` 
+    bool Escalas::compararNotas(int a, int b, int dominante) {
+        return ajustarBucleNotas(a, dominante) < ajustarBucleNotas(b, dominante);
+    }
 
 Ej. 
     Si el vector que se le da es {5, 6, 4, 3, 2, 0, 1} el cual seria empezaria desde 5 = inicio a 1 = fin y la dominante seria 1, tras estor iterara por todo el sort asignando valores de a y b a cada numeros seleccionados en la iteracion: 
@@ -140,7 +143,7 @@ It3:    Comparación entre 5 y 3:
         Como 4 > 2, 3 va antes que 5.
 
 Y se repite este proceso hasta ordenar todas las notas, la diferencia aqui es que se hace la comparacion no con el valor de los numeros si no con el valor de la distancia que tienen con la dominante y si es true se eraliza el cambio en caso de que se falso no.
-
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 2.- Ajuste
 

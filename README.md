@@ -199,7 +199,24 @@ Seleccione el algoritmo de ordenamiento sortMerge al ser un algoritmo que puede 
 Seleccione el algoritmo de una lista ligada simple para esta primera lista en el programa, esto porque no requerrira de mucha manipulacion de datos por lo que los beneficios que te puede dar una lista ligada doble aun no son muy necesarios, esto cambiara cuando llegue al paso de hacer comparaciones de datos para descubrir la tonalidad de la cancion. El algoritmo se encuentra en list.h y se emplea en leer.h
 ### SICT0303: Implementa acciones científicas
 #### Implementa mecanismos para consultar información de las estructras correctos.
-Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
+En este codigo se hacen uso de varios metodos para consultar informacion dentro de una estructura de dato: .back(); funcion search(); y se hizo uso de ir iterando el root de la lista ligada por toda la lista de notas. 
+
+    int List<T>::search(T val)  {//itera por la lista para revisar si existe el valor val
+        Link<T> *current = head;
+        int index = 0;
+        while (current != NULL) {
+            if (current->value == val) {
+                return index;
+            }
+                    index++;
+            current = current->next;
+        }
+        return -1;  //no se encontro el valor buscado
+    }
+
 
 #### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
 En el archivo de leer.h se puede apreciar como se realiza una extraccion de datos de un archivo template .XML ("PruebasMusic.xml") para su posterior almacenamiento en una lista ligada, esto se logra con el archivo TinyXML2 el cual es una herramienta que nos permitira hacer uso de funciones para encontrar ciertos elementos dentro del erchivo XML y luego al encontrar el "step" dentro de "pitch" se almacenara en una lista ligada para su posterior uso en el proyecto.
+
+### Implementa mecanismos de escritura de archivos para guardar los datos  de las estructuras de manera correcta
+Se hace uso de stringstream para que ciertas funciones devuelvan en formato de string deseado y tras esto en el main se hace uso de ofstream para crear un archivo de texto llamada "codeMusic.txt" donde todas las funciones string que dan el resultado se llaman y se almacenan ahí.

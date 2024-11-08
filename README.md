@@ -112,13 +112,58 @@ Ejemplo:
     Esto se itera sobre la lista de escalas que tenemos y se regresa el nombre de la escala.
     Resultado = Scale + notaDominante = Escala Menor Armonica de A.
 
+Para todo este proceso se hace uso de varias funciones especiales:
+
+1.- Sort:
+    `sort(inicio, fin, [&dominante, this](int a, int b) { //comparara 2 notas del vector pero no el numero en si, el resultados tras usar funcion ajustarBucleNotas 
+        return compararNotas(a, b, dominante);
+    });` 
+    
+`bool Escalas::compararNotas(int a, int b, int dominante) {
+    return ajustarBucleNotas(a, dominante) < ajustarBucleNotas(b, dominante);
+}` 
+
+Ej. 
+    Si el vector que se le da es {5, 6, 4, 3, 2, 0, 1} el cual seria empezaria desde 5 = inicio a 1 = fin y la dominante seria 1, tras estor iterara por todo el sort asignando valores de a y b a cada numeros seleccionados en la iteracion: 
+    
+It1:    Comparación entre 5 y 6:
+        distanciaCiclica(5, 1) = 4
+        distanciaCiclica(6, 1) = 5
+        Como 4 < 5, 5 va antes que 6.
+It2:    Comparación entre 5 y 4:
+        distanciaCiclica(5, 1) = 4
+        distanciaCiclica(4, 1) = 3
+        Como 4 > 3, 4 va antes que 5.
+It3:    Comparación entre 5 y 3:
+        distanciaCiclica(5, 1) = 4
+        distanciaCiclica(3, 1) = 2
+        Como 4 > 2, 3 va antes que 5.
+
+Y se repite este proceso hasta ordenar todas las notas, la diferencia aqui es que se hace la comparacion no con el valor de los numeros si no con el valor de la distancia que tienen con la dominante y si es true se eraliza el cambio en caso de que se falso no.
+
+
+2.- Ajuste
+
+    int Escalas::ajustarBucleNotas(int nota, int dominante){
+        int distancia = nota - dominante; //distancia entre nota y nota dominante
+        // Ajustar a una cantidad que sea valida para nota 0 - 11
+        //en caso de ser negativo distancia deveulve el residuo lo cual sirve para hacer 0 - 11 un "bucle"
+        return (distancia + 12) % 12;  // ej. 2 - 4 = -2; -2 + 12 = 10; ej2. 5 - 1 = 4; + 12 = 16 % 12 = 16 - 12 = 4;
+    }
+
+(distancia + 12) % 12;  Esta funcion se hace para que la nota 12 que en todo caso seria un C2 se tome como un C y siempre se trabaje sobre un bucle de 0 - 11, aunque esto tmb se pudo haber resuelto con un vector, me parecio que seria mas facil hacer operaciones matematicas y manipular las notas de esta manera.
+
+Ej.
+         5 - 1 = 4; + 12 = 16 % 12 = 16 - 12 = 4;
 
 
 ### Cambios sobre el segundo avance
-1. Escribe la lista de cambios realizados sobre el planteamiento pasado: Argumenta la razón por la que decidiste el cambio. Estos argumentos puedes retomarlos más adelante en tu argumentación de competencias.
-2. Cambio 2: Razón del cambio
-3. Cambio 3: Razón del cambio
-4. etc...: etc...
+1. Modificar archivo Tonalidad.h
+2. Crear archivo Escalas.h y devolver la escala de la cancion.
+3. Analisis de complejidad para cada funcion del codigo.
+4. Extraccion del archivo de Txt con la informacion de la partitura
+5. Link a una pagina creada en la cual puede crear archivos xml para luego ser analizada por el code
+6. Solucionar errores previos.
 
 
 

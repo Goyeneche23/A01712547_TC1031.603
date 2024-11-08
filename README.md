@@ -94,6 +94,34 @@ Este avance busca hacer uso de las listas, esto se puede ver como al extraer las
 3. list.h: El codigo mayormente desarrollado en las clases, se usara dentro de leer.h para guardar todas las notas en una lista ligada.
 4. contarNotas(): Dentro de Tonalidad.h se crea la funcion contarNotas que ayuda al ordenamiento de estas, haciendo uso de la lista ligada de una manera no muy practica pasa la informacion a un vector con el cual se trabajara para el analisis y ordenamiento.
 
+
+
+## Descripción del avance 3
+El Avance 3 termina el codigo almenos los objetivos planteados al principio para este, se logra con el archivo Escalas.h hacer uso del vector con las notas ordenadas que ya teniamos para ordenarlas sobre la nota dominante: 
+
+Ejemplo: 
+    Notas Ordenadas= [D, E, C ,F, G#, B, A] ? [2, 4, 0, 5, 8, 11, 9]
+    NotaDominante = ultima nota de Notas Ordenadas = A = 9
+    OrdenadasSobreDominante = [A, B, C, D, E, F,G#] = [9, 11, 0, 2, 4, 5, 8]
+
+Tras esto lo que se decidio hacer para iterar sobre los vectores de listasa ordenadas que tendriamos fue iterar sobre patrones y no sobre notas. La opcion mas simple hubiera sido almacenar todas las escalas posibles e iterar sobre estas con el vector de las notas OrdenadaSobreDominante hasta encontrar coencidencia pero la complejidad hubiera sido exponencial, luego surgio la idea de hacer uso de un arbol Hash o Merkle con las 11 notas como inicios de arboles para que la complejidad baje a O(n) y se vaya siguiendo un camino hasta llegar al nombre de la nota pero seguiriamos con el mismo problema de almacenar muchas "listas" de escalas musicales (esta idea hubiera ignorado las escalas con saltos de tonos y medioS) por lo cual se opto por analizar los patrones (saltos) de la escala y no la escala como tal esto se tendra siempre que ordenar sobre 0.
+
+Ejemplo:
+    OrdenadasSobreDominante = [A, B, C, D, E, F,G#] = [9, 11, 0, 2, 4, 5, 8]
+    ajustadaSobreZero = [0, 2, 3, 5, 7, 8, 11] = Escala Menor Armonica.
+    Esto se itera sobre la lista de escalas que tenemos y se regresa el nombre de la escala.
+    Resultado = Scale + notaDominante = Escala Menor Armonica de A.
+
+
+
+### Cambios sobre el segundo avance
+1. Escribe la lista de cambios realizados sobre el planteamiento pasado: Argumenta la razón por la que decidiste el cambio. Estos argumentos puedes retomarlos más adelante en tu argumentación de competencias.
+2. Cambio 2: Razón del cambio
+3. Cambio 3: Razón del cambio
+4. etc...: etc...
+
+
+
 ## Instrucciones para compilar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:
 

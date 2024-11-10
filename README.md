@@ -192,11 +192,17 @@ Este programa por el momento mostrara el progreso del codigo el cual sera mostra
 Este criterio lo emplee a mi parecer correctamente en este codigo, use el metodo de ordenamiento Merge porque tras lo aprendido en clase me parecio el que podria alcanzar una menor complejidad asi como tambien comparando con las necesidades de mi proyecto que es un simple ordenamiento de un vector me parecio el mas idoneo para realizar.
 #### Hace un análisis de complejidad correcto y completo de todas las estructuras de datos y cada uno de sus usos en el programa.
 Considero que durante el curso he desarrollado esta competencia, al poder entender de manera completa la logica detras de como funciona una lista y los distintos tipos existentes de estas, en mi codigo hice uso de una lista ligada simple, esto porque tras analizar el proyecto y las necesidades que tenia me di cuenta que solo necesitaria esta primera lista para extraer y almacenar datos del archivo externo por lo cual no ocuparia de momento una lista doblemente ligada, aunque para los proximos avances donde requiera de mas manipulacion de datos a la hora de comparar las escalas musicales usare otro tipo de listas.
+#### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
+En cada funcion del programa al declarar las funciones y constructores de las clases se escribe como comentario un analisis de complejidad que incluye tanto el mejor caso, caso promedio y peor caso de cada funcion y luego al final un analisis general de cada clase (archivo). Y uno finalel cual de todo el codigo general seria de O(nlogn), lo cual en mi opinion es una complejidad aceptable tomando encuenta que en este problema se requiere mucho de la manipulación, ordenamiento y comparación de datos.
+![image](https://github.com/user-attachments/assets/5bfe89d7-b1ec-42dc-9b2f-387fab698c4b)
+
+
 ### SICT0302: Toma decisiones
 #### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
 Seleccione el algoritmo de ordenamiento sortMerge al ser un algoritmo que puede llegar a alcanzar una complejidad muy baja, el algoritmo esta en el archivo sort.h y tiene su uso y llamada en tonalidad.h
 #### Selecciona una estructura de datos adecuada al problema y la usa correctamente.
-Seleccione el algoritmo de una lista ligada simple para esta primera lista en el programa, esto porque no requerrira de mucha manipulacion de datos por lo que los beneficios que te puede dar una lista ligada doble aun no son muy necesarios, esto cambiara cuando llegue al paso de hacer comparaciones de datos para descubrir la tonalidad de la cancion. El algoritmo se encuentra en list.h y se emplea en leer.h
+Seleccione el algoritmo de una lista ligada simple para esta primera lista en el programa, esto porque no requerrira de mucha manipulacion de datos por lo que los beneficios que te puede dar una lista ligada doble aun no son muy necesarios, esto cambiara cuando llegue al paso de hacer comparaciones de datos para descubrir la tonalidad de la cancion. El algoritmo se encuentra en list.h y se emplea en leer.h.
+
 ### SICT0303: Implementa acciones científicas
 #### Implementa mecanismos para consultar información de las estructras correctos.
 En este codigo se hacen uso de varios metodos para consultar informacion dentro de una estructura de dato: .back(); funcion search(); y se hizo uso de ir iterando el root de la lista ligada por toda la lista de notas. 

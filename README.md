@@ -117,7 +117,7 @@ Para todo este proceso se hace uso de varias funciones especiales:
 1.- Sort:
 
     sort(inicio, fin, [&dominante, this](int a, int b) { //comparara 2 notas del vector pero no el numero en si, el resultados tras usar funcion ajustarBucleNotas 
-            return compararNotas(a, b, dominante);
+            return compararNotas(a, b, dominante); //This usado  para acceder a valores de funcion compararNotas
         });
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

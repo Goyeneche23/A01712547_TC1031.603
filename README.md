@@ -4,7 +4,7 @@
 
 #### Juan José Goyeneche Sánchez - A01712547
 
-Descripcion proyecto
+Descripcion proyecto | Complexity = O(nlogn)
 ===============	
 
 Este programa para la clase de Programación de estructuras de datos y algoritmos fundamentales tendra como objetivo crear un herramienta que analise piezas musicales. 

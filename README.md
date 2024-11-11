@@ -227,3 +227,17 @@ En el archivo de leer.h se puede apreciar como se realiza una extraccion de dato
 
 ### Implementa mecanismos de escritura de archivos para guardar los datos  de las estructuras de manera correcta
 Se hace uso de stringstream para que ciertas funciones devuelvan en formato de string deseado y tras esto en el main se hace uso de ofstream para crear un archivo de texto llamada "codeMusic.txt" donde todas las funciones string que dan el resultado se llaman y se almacenan ahí.
+
+________________________________________________
+
+## Referencias
+
+"(https://www.w3schools.com/cpp/cpp_structs.asp)"
+
+"(https://www.freecodecamp.org/espanol/news/c-map-explicado-con-ejemplos/)"
+
+"(https://github.com/leethomason/tinyxml2)"
+
+"(ChatGPT, 2024)"
+
+"(https://www.geeksforgeeks.org/lambda-expression-in-c/)"

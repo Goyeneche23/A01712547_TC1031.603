@@ -166,6 +166,7 @@ Ej.
 4. Extraccion del archivo de Txt con la informacion de la partitura
 5. Link a una pagina creada en la cual puede crear archivos xml para luego ser analizada por el code
 6. Solucionar errores previos.
+7. Espaciados para una mejor legibilidad del codigo.
 
 
 

@@ -242,4 +242,6 @@ ________________________________________________
 
 "(ChatGPT, 2024)"
 
+"(https://godbolt.org/)"
+
 "(https://www.geeksforgeeks.org/lambda-expression-in-c/)"

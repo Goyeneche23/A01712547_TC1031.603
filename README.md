@@ -117,7 +117,7 @@ Para todo este proceso se hace uso de varias funciones especiales:
 1.- Sort:
 
     sort(inicio, fin, [&dominante, this](int a, int b) { //comparara 2 notas del vector pero no el numero en si, el resultados tras usar funcion ajustarBucleNotas 
-            return compararNotas(a, b, dominante); //This, clausula de captura
+            return compararNotas(a, b, dominante); //This, clausula de captura para acceder a funcion no estatica
         });
 
 Una cláusula de captura vacía, [ ], indica que el cuerpo de la expresión lambda no tiene acceso a ninguna variable en el ámbito de inclusión.

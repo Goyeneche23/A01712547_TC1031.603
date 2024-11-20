@@ -171,6 +171,13 @@ Ej.
 7. Espaciados para una mejor legibilidad del codigo.
 
 
+## Descripción del avance final
+Este cuarto avance agrega una manera de seleccionar el archivo xml a analizar directamente desde la consola, con varias composiciones de prueba ya creadas que sencontraran en el folder "compositions", agregado a esto en el readme se hace la argumentacion sobre la selección de la estructura de datos ya con un analisis de complejidad que explique mi decición.
+
+### Cambios sobre el tercer avance
+1.- Mas casos de prueba.
+2.- Entrada desde consola Input.
+3.- Argumentacion analisis de complejidad seleccion estructura de datos.
 
 ## Instrucciones para compilar el avance de proyecto
 Ejecuta el siguiente comando en la terminal:

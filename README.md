@@ -212,6 +212,11 @@ En cada funcion del programa al declarar las funciones y constructores de las cl
 Seleccione el algoritmo de ordenamiento sortMerge al ser un algoritmo que puede llegar a alcanzar una complejidad muy baja, el algoritmo esta en el archivo sort.h y tiene su uso y llamada en tonalidad.h
 #### Selecciona una estructura de datos adecuada al problema y la usa correctamente.
 Seleccione el algoritmo de una lista ligada simple para esta primera lista en el programa, esto porque no requerrira de mucha manipulacion de datos por lo que los beneficios que te puede dar una lista ligada doble aun no son muy necesarios, esto cambiara cuando llegue al paso de hacer comparaciones de datos para descubrir la tonalidad de la cancion. El algoritmo se encuentra en list.h y se emplea en leer.h.
+La lista ligada simple tiene una complejidad de O(1) como mejor caso y como casos promedio O(n), tanto para delete, find e insertion. LA otra opcion para usar en el proyecto era una lista doblemente ligada la cual tiene una mejor eficiencia en terminos de funciones como insertion y delete en ciertos casos (mejor O(1), peor O(n)), aunque agrega un puntero adicional por nodo lo cual es mas ineficiente en terminos de memoria. Nosotros al leer el archivo xml hacemos uso de insertion y al pasar esta lista para su posterior analisis en vez de find nos movemos junto con el root para tener las notas en el orden que fueron extraidas por lo cual en esta  acción no habria ninguna diferencia con una lista doblemente ligada, por temas de memoria y la naturaleza del problema, se decidio usar una lista ligada simple. El analisis de complejidad de cada funcion se encuentra dentro del codigo:
+Complejidad de la lista ligada simple:
+Mejor caso: O(1)
+Caso promedio: O(n)
+Peor caso: O(n)
 
 ### SICT0303: Implementa acciones científicas
 #### Implementa mecanismos para consultar información de las estructras correctos.
